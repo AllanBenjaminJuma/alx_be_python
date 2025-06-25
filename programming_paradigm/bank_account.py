@@ -1,4 +1,4 @@
-class BankAccount():
+class BankAccount:
     def __init__(self, account_balance = 0.0):
         if not isinstance(account_balance, (int, float)):
             raise ValueError("Initial Balance must be a number, 0-9.")
