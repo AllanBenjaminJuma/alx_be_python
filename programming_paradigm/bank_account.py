@@ -14,10 +14,10 @@ class BankAccount():
         if not isinstance (amount, (int, float)) or amount <= 0:#check whether amount is a float or int
             raise ValueError("Amount has to be a positive number.")
         if amount > self.account_balance:
-            print("Insufficient funds in your account.")
+            print("Insufficient funds.")
             return False
         self.account_balance -= amount
-        print(f"You have withdrawn: KES {amount:.2f}. New balance is: KES {self.account_balance:.2f}")
+        print(f"Withdrew: ${amount:.2f}")
         return True
     
     def display(self):
