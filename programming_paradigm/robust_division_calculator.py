@@ -8,4 +8,4 @@ def safe_divide(numerator, denominator):
         
         return f"Result: {num / den }"
     except ValueError:
-        return "Error: Both inputs must be numeric."
+        return "Error: Please enter numeric values only."
