@@ -27,7 +27,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(7.5, 2.5), 5.0) # Test with floats
         self.assertEqual(self.calc.subtract(-10.0, -5.0), -5.0) # Test with floats
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test the multiply method with various numbers."""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-1, 5), -5)
@@ -37,7 +37,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(2.5, 2), 5.0) # Test with floats
         self.assertEqual(self.calc.multiply(0.5, 0.5), 0.25) # Test with floats
 
-    def test_divide(self):
+    def test_division(self):
         """Test the divide method with various numbers, including division by zero."""
         self.assertEqual(self.calc.divide(6, 3), 2)
         self.assertEqual(self.calc.divide(5, 2), 2.5) # Test with float result
